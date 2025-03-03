@@ -1,0 +1,1 @@
+Tutaj jakieś api calle i inne utilsowe funkcje
