@@ -7,7 +7,7 @@ export type FurnitureDisplayItem = {
   dimensions: string;
   filling: string;
   price: string;
-  colors: string[];
+  materials: string[];
   image: string;
 };
 
@@ -21,7 +21,11 @@ const FurnitureDisplayList = () => {
       dimensions: "300cm x 220cm",
       filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
       price: "5399.99 zł",
-      colors: ["#8B6F6B", "#A58B89", "#9C7A77"],
+      materials: [
+        "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+      ],
       image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
     },
     {
@@ -31,7 +35,11 @@ const FurnitureDisplayList = () => {
       dimensions: "310cm x 210cm",
       filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
       price: "5599.99 zł",
-      colors: ["#C4A484", "#E8DED1", "#8CA4B2"],
+      materials: [
+        "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+      ],
       image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
     },
     {
@@ -41,7 +49,11 @@ const FurnitureDisplayList = () => {
       dimensions: "260cm x 180cm",
       filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
       price: "4699.99 zł",
-      colors: ["#FFFFFF", "#B80F0A", "#2D2D2D"],
+      materials: [
+        "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+      ],
       image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
     },
     {
@@ -51,7 +63,11 @@ const FurnitureDisplayList = () => {
       dimensions: "310cm x 210cm",
       filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
       price: "5599.99 zł",
-      colors: ["#C4A484", "#E8DED1", "#8CA4B2"],
+      materials: [
+        "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+      ],
       image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
     },
     {
@@ -61,14 +77,18 @@ const FurnitureDisplayList = () => {
       dimensions: "260cm x 180cm",
       filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
       price: "4699.99 zł",
-      colors: ["#FFFFFF", "#B80F0A", "#2D2D2D"],
+      materials: [
+        "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+        "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+      ],
       image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
     },
   ];
 
   return (
     <div className="mb-24 flex justify-center">
-      <div className="w-[1248px] flex flex-wrap gap-12">
+      <div className="w-full max-w-[1248px] flex flex-wrap gap-12">
         {furnitureItems.map((item) => (
           <FurnitureDisplay key={item.id} item={item} />
         ))}

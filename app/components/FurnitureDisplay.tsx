@@ -1,4 +1,6 @@
 import { FurnitureDisplayItem } from "./FurnitureDisplayList";
+import FurnitureDisplayMaterial from "./FurnitureDisplayMaterial";
+import Link from "next/link";
 
 type Props = {
   item: FurnitureDisplayItem;
@@ -7,10 +9,10 @@ type Props = {
 const FurnitureDisplay = (props: Props) => {
   const { item } = props;
 
-  // TODO
-  //   const navigateToProduct = () => {
-  // router.push(`/narozniki/${item.id}`);
-  //   };
+  // TODO: replace with next/link
+  // const navigateToProduct = (id: number) => {
+  //   router.push(`/narozniki/${id}`);
+  // };
 
   return (
     <div className="w-[520px] bg-white shadow-lg max-w-sm rounded-md">
@@ -25,23 +27,22 @@ const FurnitureDisplay = (props: Props) => {
           <p className="mt-4 text-black text-xl text-center">
             {item.description}
           </p>
-          <p className="text-gray-600 mt-2 ">wymiar: {item.dimensions}</p>
+          <p className="text-gray-600 mt-2">wymiar: {item.dimensions}</p>
           <p className="text-gray-600">wypełnienie: {item.filling}</p>
-          <div className="flex space-x-2 mt-3 justify-center">
-            {item.colors.map((color, index) => (
-              <span
-                key={index}
-                className="w-6 h-6 rounded-full border"
-                style={{ backgroundColor: color }}
-              ></span>
+          <div className="relative flex space-x-2 mt-3 justify-center">
+            {item.materials.map((materialImage, index) => (
+              <FurnitureDisplayMaterial key={index} image={materialImage} />
             ))}
           </div>
         </div>
 
         <div className="flex flex-col items-center gap-4">
-          <button className="mt-4 bg-gray-200 text-gray-700 px-4 py-2 rounded-md">
+          <Link
+            href={`/narozniki/${item.id}`}
+            className="mt-4 bg-gray-200 text-gray-700 px-4 py-2 rounded-md"
+          >
             Zobacz więcej
-          </button>
+          </Link>
           <p className="text-black text-2xl font-bold mt-2">{item.price}</p>
         </div>
       </div>
