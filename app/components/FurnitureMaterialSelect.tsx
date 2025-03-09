@@ -4,13 +4,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/shadcnUI/select";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/components/shadcnUI/tooltip";
 import { cn } from "@/lib/utils";
 import { InfoCircle } from "@mynaui/icons-react";
 import { ReactNode } from "react";
