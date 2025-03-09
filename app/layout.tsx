@@ -59,7 +59,7 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <body className={`${eb_garamond.className} antialiased`}>
+      <body className={`${lato.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
 

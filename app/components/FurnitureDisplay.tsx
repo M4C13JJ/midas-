@@ -1,5 +1,5 @@
 import { FurnitureDisplayItem } from "./FurnitureDisplayList";
-import FurnitureDisplayMaterial from "./FurnitureDisplayMaterial";
+import FurnitureMaterial from "./FurnitureMaterial";
 import Link from "next/link";
 
 type Props = {
@@ -31,7 +31,7 @@ const FurnitureDisplay = (props: Props) => {
           <p className="text-gray-600">wypełnienie: {item.filling}</p>
           <div className="relative flex space-x-2 mt-3 justify-center">
             {item.materials.map((materialImage, index) => (
-              <FurnitureDisplayMaterial key={index} image={materialImage} />
+              <FurnitureMaterial key={index} image={materialImage} />
             ))}
           </div>
         </div>
