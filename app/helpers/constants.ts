@@ -1,5 +1,4 @@
-import { MaterialGroup } from "./types";
-
+import { FurnitureDisplayItem, MaterialGroup } from "./types";
 export const COLLECTION_ITEMS: MaterialGroup[] = [
   {
     value: "poso",
@@ -92,3 +91,515 @@ export const COLLECTION_ITEMS: MaterialGroup[] = [
     ],
   },
 ];
+export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
+  {
+    id: 1,
+    name: "Polo",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/polo/polo-0.jpg",
+      "/assets/corners/polo/polo-1.jpg",
+      "/assets/corners/polo/polo-02.jpg"]
+  },
+  {
+    id: 2,
+    name: "Coco",
+    description:
+      "Narożnik Coco z pojemnikiem na pościel i funkcja spania",
+    dimensions: "310cm x 210cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco-0.jpg",
+      "/assets/corners/coco/coco-1.jpg",]
+  },
+  {
+    id: 3,
+    name: "Moly",
+    description:
+      "Narożnik Moly na wysokiej nodze z pojemnikiem na pościel i funkcja spania i relaks",
+    dimensions: "260cm x 180cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "4700 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/moly/moly-0.jpg",
+      "/assets/corners/moly/moly-1.jpg",
+      "/assets/corners/moly/moly-2.jpg",
+      "/assets/corners/moly/moly-3.jpg",
+      "/assets/corners/moly/moly-4.jpg",]
+  },
+  {
+    id: 4,
+    name: "Boss II",
+    description:
+      "Narożnik Boss II z funkcją spania i pojemnikiem na pościel",
+    dimensions: "270cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "4700 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/bossII/bossII-01.jpg",
+      "/assets/corners/bossII/bossII-02.jpg",
+      "/assets/corners/bossII/bossII-03.jpg",
+      "/assets/corners/bossII/bossII-04.jpg",
+      "/assets/corners/bossII/bossII-05.jpg",
+      "/assets/corners/bossII/bossII-06.jpg",
+      "/assets/corners/bossII/bossII-07.jpg",
+      "/assets/corners/bossII/bossII-08.jpg",
+      "/assets/corners/bossII/bossII-09.jpg"]
+  },
+  
+  {
+    id: 5,
+    name: "Milano",
+    description:
+      "Narożnik Milano z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "275cm x 200cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "4600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/milano/milano-01.jpg",
+      "/assets/corners/milano/milano-02.jpg",
+      "/assets/corners/milano/milano-03.jpg",
+      "/assets/corners/milano/milano-04.jpg",
+      "/assets/corners/milano/milano-05.jpg",
+      "/assets/corners/milano/milano-06.jpg",
+      "/assets/corners/milano/milano-07.jpg",
+      "/assets/corners/milano/milano-08.jpg",]
+     
+  },
+  {
+    id: 6,
+    name: "Valencia #TODO VALENCIAV2 V3",
+    description:
+      "Narożnik Valencia z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "260cm x 180cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "4500 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/valencia/valencia-01.jpg",
+      "/assets/corners/valencia/valencia-02.jpg",
+      "/assets/corners/valencia/valencia-03.jpg",
+      "/assets/corners/valencia/valencia-04.jpg",
+      "/assets/corners/valencia/valencia-05.jpg",
+      "/assets/corners/valencia/valencia-06.jpg",
+      "/assets/corners/valencia/valencia-07.jpg",
+      "/assets/corners/valencia/valencia-08.jpg",
+      "/assets/corners/valencia/valencia-09.jpg"]
+     
+  },
+  {
+    id: 7,
+    name: "Mini Polo",
+    description:
+      "Narożnik Mini Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "260cm x 185cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "3300 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/minipolo/minipolo-01.jpg",
+      "/assets/corners/minipolo/minipolo-02.jpg",
+      "/assets/corners/minipolo/minipolo-03.jpg",
+      "/assets/corners/minipolo/minipolo-04.jpg"]
+      
+  },
+
+  {
+    id: 8,
+    name: "Czaki",
+    description:
+      "Czaki z dwoma pojemnikami na pościel oraz funkcja spania",
+    dimensions: "220cm x 140cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "2600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: [
+      "/assets/corners/czaki/czaki-01.jpg",
+      "/assets/corners/czaki/czaki-02.jpg",
+      "/assets/corners/czaki/czaki-03.jpg",
+      "/assets/corners/czaki/czaki-04.jpg",
+      "/assets/corners/czaki/czaki-05.jpg",
+      "/assets/corners/czaki/czaki-06.jpg",
+      "/assets/corners/czaki/czaki-07.jpg",
+      "/assets/corners/czaki/czaki-08.jpg",
+      "/assets/corners/czaki/czaki-09.jpg"]
+      
+  },
+  {
+    id: 9, 
+    name: "Laura #todo",
+    description:
+      "Narożnik Laura z dwu-częściowym systemem rozkładania i dwoma pojemnikami na pościel",
+    dimensions: "350cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5800 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Denver",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Coco III",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Coco II",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Czaki II",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Czaki III",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Galaxy II",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+  {
+    id: 8,
+    name: "Boss I",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    image: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
+  },
+
+];
+export const SOFAS_COLLECTION: FurnitureDisplayItem[] = [
+
+];
+
+
+//     id: 2,
+//     name: "Coco",
+//     description: "Narożnik Coco z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "310cm x 210cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "5599.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 3,
+//     name: "Boss II",
+//     description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "260cm x 180cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "4699.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 4,
+//     name: "Luna",
+//     description: "Narożnik Coco z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "310cm x 210cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "5599.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 5,
+//     name: "Milano",
+//     description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "260cm x 180cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "4699.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 6,
+//     name: "Milano",
+//     description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "260cm x 180cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "4699.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 7,
+//     name: "Valencia",
+//     description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "260cm x 180cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "4699.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+//   {
+//     id: 8,
+//     name: "Czaki",
+//     description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//     dimensions: "260cm x 180cm",
+//     filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//     price: "4699.99 zł",
+//     materials: [
+//       "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//       "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//     ],
+//     image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+//   },
+// {
+//   id: 9,
+//   name: "Laura",
+//   description:
+//     "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+//   dimensions: "300cm x 220cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "5399.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 10,
+//   name: "Denver",
+//   description: "Narożnik Coco z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "310cm x 210cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "5599.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 11,
+//   name: "Boss II z gniazdkiem USB",
+//   description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "260cm x 180cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "4699.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 4,
+//   name: "Coco III",
+//   description: "Narożnik Coco z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "310cm x 210cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "5599.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 5,
+//   name: "Coco II",
+//   description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "260cm x 180cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "4699.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 6,
+//   name: "Polo U",
+//   description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "260cm x 180cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "4699.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 7,
+//   name: "Valencia pufy",
+//   description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "260cm x 180cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "4699.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },
+// {
+//   id: 8,
+//   name: "Czaki",
+//   description: "Narożnik Moly z funkcją spania i pojemnikiem na pościel",
+//   dimensions: "260cm x 180cm",
+//   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+//   price: "4699.99 zł",
+//   materials: [
+//     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+//     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+//   ],
+//   image: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
+// },

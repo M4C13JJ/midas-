@@ -6,3 +6,14 @@ export type MaterialGroup = {
     label: string;
   }[];
 };
+export type FurnitureDisplayItem = {
+  id: number;
+  name: string;
+  description: string;
+  dimensions: string;
+  filling: string;
+  price: string;
+  materials: string[];
+  image: string[];
+};
+

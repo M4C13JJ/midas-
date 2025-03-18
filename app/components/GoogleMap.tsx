@@ -8,8 +8,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: 50.27321538631816,
-  lng: 19.126811858105274,
+  lat: 50.27401711309331,
+  lng: 19.127415543968276,
 };
 
 const GoogleMapContainer = () => {
