@@ -7,7 +7,7 @@ import { ChevronRight,ChevronLeft } from 'lucide-react';
 
 type ImageSliderProps = {
   images: {
-    url: string
+    uri: string
     alt: string
   }[]
 }
@@ -43,10 +43,10 @@ export function ImageSlider({ images }: ImageSliderProps) {
           overflow: "hidden",
         }}
       >
-        {images.map(({ url, alt }, index) => (
+        {images.map(({ uri, alt }, index) => (
           <img
-            key={url}
-            src={url}
+            key={uri}
+            src={uri}
             alt={alt}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"

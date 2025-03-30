@@ -16,10 +16,10 @@ const FurnitureDisplay = (props: Props) => {
   // };
 
   return (
-    <div className="w-[520px] bg-white shadow-lg max-w-sm rounded-md">
-  <div className="relative h-[300px] w-full">
+    <div className="w-[320px] sm:w-[400px] md:w-[520px]  bg-white shadow-lg max-w-sm rounded-md">
+  <div className="relative h-[250px] w-full  aspect-[1024/623]">
   <Image
-  src={item.image[0]}
+  src={item.images[0].uri}
   alt={`Narożnik ${item.name}`}
   fill
   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

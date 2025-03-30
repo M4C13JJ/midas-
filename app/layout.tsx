@@ -60,8 +60,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body className={`${lato.className} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
+      <Navbar />
+      <main>{children}</main>
 
         <Footer />
       </body>

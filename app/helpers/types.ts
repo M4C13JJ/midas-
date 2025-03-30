@@ -14,6 +14,8 @@ export type FurnitureDisplayItem = {
   filling: string;
   price: string;
   materials: string[];
-  image: string[];
+  images: { uri: string; alt: string }[];
 };
-
+export type Props = {
+  params: { name: string };
+};
