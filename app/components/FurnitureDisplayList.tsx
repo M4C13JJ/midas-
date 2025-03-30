@@ -1,5 +1,5 @@
 import FurnitureDisplay from "./FurnitureDisplay";
-import {CORNERS_COLLECTION } from "../helpers/constants"
+import { CORNERS_COLLECTION } from "../helpers/constants";
 export type FurnitureDisplayItem = {
   id: number;
   name: string;
@@ -8,11 +8,10 @@ export type FurnitureDisplayItem = {
   filling: string;
   price: string;
   materials: string[];
-  images: {uri:string,alt:string }[];
+  images: { uri: string; alt: string }[];
 };
 
 const FurnitureDisplayList = () => {
-  
   //   {
   //     id: 1,
   //     name: "Polo",
@@ -242,12 +241,10 @@ const FurnitureDisplayList = () => {
   // ];
 
   return (
-    <div className="mb-24 flex justify-center">
-      <div className="w-full max-w-[1248px] flex justify-center flex-wrap gap-12">
-        {CORNERS_COLLECTION.map((item) => (
-          <FurnitureDisplay key={item.id} item={item} />
-        ))}
-      </div>
+    <div className="w-full max-w-[1248px] flex justify-center flex-wrap gap-12 mb-24">
+      {CORNERS_COLLECTION.map((item) => (
+        <FurnitureDisplay key={item.id} item={item} />
+      ))}
     </div>
   );
 };

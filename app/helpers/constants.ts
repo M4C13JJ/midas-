@@ -172,6 +172,46 @@ export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
       { uri: "/assets/corners/bossII/bossII-07.jpg", alt: "Narożnik Boss II" },
     ],
   },
+  {
+    id: 4,
+    name: "Boss II z gniazdem USB",
+    description: "Narożnik Boss II z funkcją spania i pojemnikiem na pościel",
+    dimensions: "270cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "4700 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/bossII/bossII-01.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-02.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-03.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-04.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-05.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-06.jpg", alt: "Narożnik Boss II" },
+      { uri: "/assets/corners/bossII/bossII-07.jpg", alt: "Narożnik Boss II" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Boss I",
+    description:
+      "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
+    dimensions: "300cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/czaki/czaki-01.jpg", alt: "Narożnik Boss I" },
+      { uri: "/assets/corners/czaki/czaki-09.jpg", alt: "Narożnik Boss I" },
+    ],
+  },
 
   {
     id: 5,
@@ -199,7 +239,7 @@ export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
   },
   {
     id: 6,
-    name: "Valencia #TODO VALENCIAV2 V3",
+    name: "Valencia II",
     description:
       "Narożnik Valencia z funkcją spania i dwoma pojemnikami na pościel",
     dimensions: "260cm x 180cm",
@@ -213,6 +253,62 @@ export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
     images: [
       {
         uri: "/assets/corners/valencia/valencia-01.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-02.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-03.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-04.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-05.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-06.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-07.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-08.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-09.jpg",
+        alt: "Narożnik Valencia",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Valencia ",
+    description:
+      "Narożnik Valencia z bokiem regulowanym, pufami, funkcją spania i pojemnikiem na pościel",
+    dimensions: "250cm x 250cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5000 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      {
+        uri: "/assets/corners/valencia/valencia-01.jpg",
+        alt: "Narożnik Valencia",
+      },
+      {
+        uri: "/assets/corners/valencia/valencia-02.jpg",
         alt: "Narożnik Valencia",
       },
     ],
@@ -237,62 +333,114 @@ export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
   //     "/assets/corners/minipolo/minipolo-04.jpg"]
 
   // },
+  {
+    id: 9,
+    name: "Laura #todo",
+    description:
+      "Narożnik Laura z dwu-częściowym systemem rozkładania i dwoma pojemnikami na pościel",
+    dimensions: "350cm x 220cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5800 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/", alt: "Narożnik Laura" },
+      { uri: "/assets/corners/", alt: "Narożnik Laura" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Denver",
+    description: "Narożnik Denver z funkcją spania i pojemnikiem na pościel",
+    dimensions: "260cm x 190cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "5400 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/", alt: "Narożnik Denver" },
+      { uri: "/assets/corners/", alt: "Narożnik Denver" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Czaki",
+    description: "Czaki z dwoma pojemnikami na pościel oraz funkcja spania",
+    dimensions: "220cm x 140cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "2600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/czaki/czaki-01.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-02.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-03.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-04.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-05.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-06.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-07.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-08.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-09.jpg", alt: "Narożnik Czaki I" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Czaki",
+    description: "Czaki z dwoma pojemnikami na pościel oraz funkcja spania",
+    dimensions: "220cm x 140cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "2600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/czaki/czaki-01.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-02.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-03.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-04.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-05.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-06.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-07.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-08.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-09.jpg", alt: "Narożnik Czaki I" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Czaki",
+    description: "Czaki z dwoma pojemnikami na pościel oraz funkcja spania",
+    dimensions: "220cm x 140cm",
+    filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
+    price: "2600 zł",
+    materials: [
+      "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
+      "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
+    ],
+    images: [
+      { uri: "/assets/corners/czaki/czaki-01.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-02.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-03.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-04.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-05.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-06.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-07.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-08.jpg", alt: "Narożnik Czaki I" },
+      { uri: "/assets/corners/czaki/czaki-09.jpg", alt: "Narożnik Czaki I" },
+    ],
+  },
 
-  // {
-  //   id: 8,
-  //   name: "Czaki",
-  //   description:
-  //     "Czaki z dwoma pojemnikami na pościel oraz funkcja spania",
-  //   dimensions: "220cm x 140cm",
-  //   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
-  //   price: "2600 zł",
-  //   materials: [
-  //     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
-  //   ],
-  //   images: [
-  //     "/assets/corners/czaki/czaki-01.jpg",
-  //     "/assets/corners/czaki/czaki-02.jpg",
-  //     "/assets/corners/czaki/czaki-03.jpg",
-  //     "/assets/corners/czaki/czaki-04.jpg",
-  //     "/assets/corners/czaki/czaki-05.jpg",
-  //     "/assets/corners/czaki/czaki-06.jpg",
-  //     "/assets/corners/czaki/czaki-07.jpg",
-  //     "/assets/corners/czaki/czaki-08.jpg",
-  //     "/assets/corners/czaki/czaki-09.jpg"]
-
-  // },
-  // {
-  //   id: 9,
-  //   name: "Laura #todo",
-  //   description:
-  //     "Narożnik Laura z dwu-częściowym systemem rozkładania i dwoma pojemnikami na pościel",
-  //   dimensions: "350cm x 220cm",
-  //   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
-  //   price: "5800 zł",
-  //   materials: [
-  //     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
-  //   ],
-  //   images: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
-  // },
-  // {
-  //   id: 8,
-  //   name: "Denver",
-  //   description:
-  //     "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
-  //   dimensions: "300cm x 220cm",
-  //   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
-  //   price: "5400 zł",
-  //   materials: [
-  //     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
-  //   ],
-  //   images: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
-  // },
   // {
   //   id: 8,
   //   name: "Coco III",
@@ -356,21 +504,6 @@ export const CORNERS_COLLECTION: FurnitureDisplayItem[] = [
   // {
   //   id: 8,
   //   name: "Galaxy II",
-  //   description:
-  //     "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
-  //   dimensions: "300cm x 220cm",
-  //   filling: "sprężyny faliste, bonell, pianka wysokoelastyczna HR",
-  //   price: "5400 zł",
-  //   materials: [
-  //     "https://www.salonmeblowymidas.pl/img/poso/1.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/11.jpg",
-  //     "https://www.salonmeblowymidas.pl/img/poso/14.jpg",
-  //   ],
-  //   images: ["/assets/corners/coco/coco.jpg","/assets/corners/coco/coco12.jpg"]
-  // },
-  // {
-  //   id: 8,
-  //   name: "Boss I",
   //   description:
   //     "Narożnik Polo z funkcją spania i dwoma pojemnikami na pościel",
   //   dimensions: "300cm x 220cm",

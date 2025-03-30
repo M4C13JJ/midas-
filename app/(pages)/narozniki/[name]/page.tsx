@@ -5,6 +5,7 @@ import { COLLECTION_ITEMS, CORNERS_COLLECTION } from "@/app/helpers/constants";
 import { useEffect, useState } from "react";
 import { ImageSlider } from "@/app/components/ImageSlider";
 import { notFound, useParams, usePathname } from "next/navigation";
+import { div } from "framer-motion/m";
 
 const Naroznik = () => {
   const params = useParams();
@@ -34,16 +35,7 @@ const Naroznik = () => {
   const [selectedImage, setSelectedImage] = useState(
     "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg"
   );
-  const images = [
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-3.jpg",
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
 
-    "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
-  ];
   //
   useEffect(() => {
     const corner = CORNERS_COLLECTION.find(
@@ -53,228 +45,88 @@ const Naroznik = () => {
       notFound();
       return;
     }
-
     setLocalImages(corner.images);
   }, [params]);
 
-  const IMAGES = [
-    {
-      uri: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
-      alt: "Car One",
-    },
-    {
-      uri: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
-      alt: "Car Two",
-    },
-    {
-      uri: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
-      alt: "Car Three",
-    },
-    {
-      uri: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-2.jpg",
-      alt: "Car Four",
-    },
-    {
-      uri: "https://www.salonmeblowymidas.pl/img/meble_salon_nowe/polo-1.jpg",
-      alt: "Car Five",
-    },
-  ];
-
   return (
-    <div className="min-h-[calc(100vh-184px)] w-full flex justify-center bg-white">
-      <div className="h-full w-full max-w-[1248px] py-12 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64mt-2 mb-12 flex gap-12">
-        <div className="w-full flex flex-col items-center flex-1">
-          <div className="w-full overflow-hidden">
-            <div
-              style={{
-                maxWidth: "1200px",
-                width: "100%",
-                aspectRatio: "10 / 6",
-                margin: "0 auto",
-              }}
-            >
-              <ImageSlider images={localImages} />
-            </div>
-            {/* <motion.div
-              className="w-full h-[600px]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.0 }}
-            >
-              <img
-                src={selectedImage}
-                alt="Produkt"
-                className="object-cover w-full h-full rounded-lg"
-              />
-            </motion.div>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {images.map((img) => (
-                <img
-                  key={img}
-                  src={img}
-                  alt="Produkt miniatura"
-                  // width={139}
-                  className={`cursor-pointer rounded-lg w-[176px] h-[120px object-fill`}
-                  onClick={() => setSelectedImage(img)}
-                />
-              ))}
-            </div> */}
+    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative flex flex-col lg:flex-row gap-16 my-10">
+      {/* IMGAES */}
+      <div className="lg:w-2/3">
+        <div className="w-full  top-20 h-max">
+          <div
+            style={{
+              maxWidth: "1200px",
+              width: "100%",
+              aspectRatio: "10 / 6",
+              margin: "0 auto",
+            }}
+          >
+            <ImageSlider images={localImages} />
+          </div>
+          <div className="mt-12">
+            OPIS PRODUKTU sit amet, consectetur adipiscing elit. Quisque
+            accumsan fringilla ullamcorper. Nullam interdum mi non tempor
+            facilisis. Sed semper, sapien hendrerit placerat facilisis, orci
+            erat faucibus sapien, sodales mattis lorem felis sit amet risus.
+            Donec tempus, arcu sit amet hendrerit luctus, mauris felis convallis
+            lorem, eget sollicitudin justo urna vel felis. Phasellus lectus
+            nisi, rhoncus nec pulvinar nec, blandit nec tellus. Donec hendrerit
+            metus ac ipsum efficitur, sit amet pharetra augue ullamcorper.
+            Nullam consectetur erat sit amet nisi egestas eleifend. C
           </div>
         </div>
+      </div>
+      {/* DESCRIPTION */}
+      <div className="w-full lg:w-1/3 flex flex-col gap-6">
+        <h1 className="text-4xl font-medium"> Product name</h1>
+        <p>
+          {" "}
+          OPIS PRODUKTU sit amet, consectetur adipiscing elit. Quisque accumsan
+          fringilla ullamcorper. Nullam interdum mi non tempor facilisis. Sed
+          semper, sapien hendrerit placerat facilisis, orci erat faucibus
+          sapien, sodales mattis lorem felis sit amet risus. Donec tempus, arcu
+          sit amet hendrerit luctus, mauris felis convallis lorem, eget
+          sollicitudin justo urna vel felis. Phasellus lectus nisi, rhoncus nec
+          pulvinar nec, blandit nec tellus. Donec hendrerit metus ac ipsum
+          efficitur, sit amet pharetra augue ullamcorper. Nullam consectetur
+          erat sit amet nisi egestas eleifend. Cras commodo eu nisl at
+          efficitur. Sed vel neque vestibulum odio consequat lobortis. Maecenas
+          congue lacus sed tincidunt facilisis. Donec semper semper tincidunt.
+          Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam
+          tempor iaculis ante eu accumsan. Etiam in accumsan neque. Donec ut
+          arcu ac nisi blandit mattis id eu leo. Fusce ut malesuada urna. In
+          ultrices libero a lorem fringilla, in hendrerit neque aliquam.
+          Suspendisse ut nulla nisi. Donec quis urna neque. Quisque porta odio
+          nec sapien pellentesque, ut molestie ipsum porta. Ut venenatis
+          interdum dolor at imperdiet. Curabitur at imperdiet arcu. Ut velit
+          elit, efficitur ut felis et, viverra efficitur dolor.{" "}
+        </p>
+        <div className="h-[2px] bg-gray-200"></div>
+        {/* <FurnitureProperties /> */}
+        <div className="h-[2px] bg-gray-200"></div>
 
-        {/* // ! Product Details */}
-        <div className="max-w-[422px]">
-          <p className="text-2xl font-bold">
-            Narożnik Coco z pojemnikiem na pościel i funkcja spania
+        <div className="text-sm">
+          <h4 className="font-medium mb-4">Title</h4>
+          <p>
+            Quisque accumsan fringilla ullamcorper. Nullam interdum mi non
+            tempor facilisis. Sed semper, sapien hendrerit placerat facilisis,
+            orci erat faucibus sapien, sodales mattis lorem felis sit amet
+            risus. Donec tempus, arcu sit amet hendrerit luctus, mauris felis
+            convallis lorem, eget sollicitudin justo urna vel felis. Phasellus
+            lectus nisi, rhoncus nec pulvinar nec, blandit nec tellus.
           </p>
-          <div className="mt-4 flex flex-col gap-2">
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Funkcja spania:"
-              selectedItem={sleepFunction}
-              tooltip="Taniej o 300zł bez funkcji spania"
-              items={[
-                { value: "yes", label: "Tak" },
-                { value: "no", label: "Nie" },
-              ]}
-              setSelectedItem={setSleepFunction}
-            />
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Wybierz szerokość:"
-              selectedItem={width}
-              tooltip="Zwiększenie wymiaru związane jest z dodatkowymi kosztami(10cm - 100zł - 150 zł w zależności od modelu) zachęcamy do kontaktu ze sprzedawcą przy dużych kosztownych modyfikacjach oferujemy atrakcyjne rabaty :)"
-              items={[
-                { value: "350", label: "350cm" },
-                { value: "340", label: "340cm" },
-                { value: "330", label: "330cm" },
-                { value: "320", label: "320cm" },
-                { value: "310", label: "310cm" },
-                { value: "300", label: "300cm" },
-              ]}
-              setSelectedItem={setWidth}
-            />
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Wybierz długość:"
-              selectedItem={length}
-              items={[
-                { value: "190", label: "190cm" },
-                { value: "180", label: "180cm" },
-                { value: "170", label: "170cm" },
-                { value: "160", label: "160cm" },
-              ]}
-              setSelectedItem={setLength}
-            />
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Wybierz kolekcję:"
-              selectedItem={collection}
-              setSelectedItem={setCollection}
-              items={[
-                { value: "poso", label: "Poso" },
-                { value: "salvador", label: "Salvador" },
-              ]}
-            />
-            <FurnitureMaterialDisplayList
-              className="mt-1"
-              bottomSelectedItemText="Wybrano materiał:"
-              selectedGroupType={collection}
-              selectedItem={material}
-              setSelectedItem={setMaterial}
-              items={COLLECTION_ITEMS}
-            />
-            {/* // ! ============== */}
-            <div className="text-sm gap-1">
-              <p>Wysyłamy próbki materiału na adres domowy, napisz do nas na</p>
-              <a
-                className="font-bold text-blue-500"
-                href="mailto:salonmeblowymidas@gmail.com"
-              >
-                salonmeblowymidas@gmail.com
-              </a>
-            </div>
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Wybierz nóżki:"
-              selectedItem={legHeight}
-              setSelectedItem={setLegHeight}
-              items={[
-                { value: "5cm", label: "5cm" },
-                { value: "10cm", label: "10cm" },
-              ]}
-            />
-            <FurnitureMaterialDisplayList
-              className="mt-1"
-              bottomSelectedItemText="Wybrano nóżki:"
-              selectedGroupType={collection} // TODO: prepare and change for leg collection
-              selectedItem={legMaterial}
-              setSelectedItem={setLegMaterial}
-              items={COLLECTION_ITEMS}
-            />
-            {/* // ! ============== */}
-            <div className="flex flex-col gap-1">
-              <p>Wybierz bok:</p>
-              <FurnitureMaterialDisplayList
-                className="mt-1"
-                bottomSelectedItemText="Wybrano bok:"
-                selectedGroupType={collection} // TODO: prepare and change for side collection
-                selectedItem={side}
-                setSelectedItem={setSide}
-                items={COLLECTION_ITEMS}
-              />
-            </div>
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Układ narożnika:"
-              selectedItem={cornerLayout}
-              setSelectedItem={setCornerLayout}
-              items={[
-                { value: "leftSide", label: "Lewostronny" },
-                { value: "rightSide", label: "Prawostronny" },
-              ]}
-            />
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Wypełnienie:"
-              tooltip="Dopłata za HR"
-              selectedItem={filling}
-              setSelectedItem={setFilling}
-              // TODO: TE TEKSTY TUTAJ SĄ ZA DŁUGIE I OGÓLNIE IMO DO ZMIANY, BO JAK TO CZYTAM TO WYGLĄDA AMATORSKO. USTAWIAM NA SKRÓCONE
-              items={[
-                { value: "HR", label: "Sprężysta falista, pianka HR" },
-                {
-                  value: "T35",
-                  label: "Sprężysta falista, pianka T35",
-                },
-              ]}
-            />
-            {/* // ! ============== */}
-            <FurnitureMaterialSelect
-              text="Mata kokosowa:"
-              tooltip="Dopłata za mate kokosową"
-              selectedItem={coconutMat}
-              setSelectedItem={setCoconutMat}
-              items={[
-                { value: "yes", label: "Tak" },
-                { value: "no", label: "Nie" },
-              ]}
-            />
-            {/* // ! ============== */}
-            <div className="flex flex-col gap-1 mt-4">
-              <p className="text-3xl font-bold">5599.99 zł</p>
-              <p className="text-sm text-gray-500">
-                Podana cena nie jest cena zobowiązującą, jest to cena
-                standardowa mebla o specyfikacji podanej poniżej w tabeli.
-                Modyfikacje mebla wiążą się ze zmianą ceny
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-3xl font-bold">Chcesz zamówić ?</p>
-              {/* // TODO: DOROBIĆ TO POTEM */}
-              TODO
-            </div>
-          </div>
+        </div>
+        <div className="h-[2px] bg-gray-200"></div>
+        <div className="text-sm">
+          <h4 className="font-medium mb-4">Title</h4>
+          <p>
+            Quisque accumsan fringilla ullamcorper. Nullam interdum mi non
+            tempor facilisis. Sed semper, sapien hendrerit placerat facilisis,
+            orci erat faucibus sapien, sodales mattis lorem felis sit amet
+            risus. Donec tempus, arcu sit amet hendrerit luctus, mauris felis
+            convallis lorem, eget sollicitudin justo urna vel felis. Phasellus
+            lectus nisi, rhoncus nec pulvinar nec, blandit nec tellus.
+          </p>
         </div>
       </div>
     </div>
@@ -282,3 +134,87 @@ const Naroznik = () => {
 };
 
 export default Naroznik;
+// {/* <div className="min-h-[calc(100vh-184px)] w-full  justify-center bg-white">
+//       <div className="h-full w-full max-w-[1248px] py-12 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64mt-2 mb-12 flex gap-12 ">
+//         <div className="w-full flex flex-col items-center flex-1">
+//           <div className="w-full overflow-hidden">
+//             <div
+//               style={{
+//                 maxWidth: "1200px",
+//                 width: "100%",
+//                 aspectRatio: "10 / 6",
+//                 margin: "0 auto",
+//               }}
+//             >
+//               <ImageSlider images={localImages} />
+//             </div>
+//             {/* <motion.div
+//               className="w-full h-[600px]"
+//               initial={{ opacity: 0 }}
+//               animate={{ opacity: 1 }}
+//               transition={{ duration: 1.0 }}
+//             >
+//               <img
+//                 src={selectedImage}
+//                 alt="Produkt"
+//                 className="object-cover w-full h-full rounded-lg"
+//               />
+//             </motion.div>
+//             <div className="flex flex-wrap gap-2 mt-4">
+//               {images.map((img) => (
+//                 <img
+//                   key={img}
+//                   src={img}
+//                   alt="Produkt miniatura"
+//                   // width={139}
+//                   className={`cursor-pointer rounded-lg w-[176px] h-[120px object-fill`}
+//                   onClick={() => setSelectedImage(img)}
+//                 />
+//               ))}
+//             </div> */}
+//           </div>
+//         </div>
+
+//         {/* // ! Product Details */}
+//         <div className="w-[422px]">
+//           <div>
+//             {" "}
+//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+//             nunc varius augue viverra ultrices nec a urna. Curabitur feugiat
+//             felis nec nisi condimentum vestibulum. Quisque ut pretium erat.
+//             Donec sodales cursus dolor, vitae varius justo mattis nec. Quisque
+//             mollis justo libero, eu blandit ligula dignissim a. Sed ultrices,
+//             nunc quis dapibus lacinia, dolor est imperdiet sem, quis interdum
+//             tortor lorem sit amet sem. Vestibulum vestibulum orci nunc, at
+//             bibendum erat iaculis sollicitudin. Cras id lectus mauris. In non
+//             iaculis mi. Ut enim augue, cursus ac tristique a, dictum elementum
+//             tortor. Nam laoreet mauris ac diam euismod bibendum ultrices eu
+//             neque. Duis laoreet tellus nec nisl vehicula rhoncus. In ornare
+//             mollis fermentum. In in erat quis massa faucibus gravida.
+//             Pellentesque id arcu tempor, euismod purus eu, malesuada mauris. Sed
+//             vestibulum enim ac semper rutrum. Sed fermentum arcu eu nisi
+//             fringilla, eu pellentesque mauris cursus. Morbi vel sapien cursus,
+//             varius magna ut, mattis risus. Curabitur viverra mollis semper. Ut
+//             vehicula lectus eget molestie molestie. Morbi gravida, dolor vel
+//             sollicitudin elementum, urna massa iaculis risus, ut vulputate diam
+//             metus rhoncus risus. Maecenas mattis, justo a varius facilisis, ante
+//             sapien suscipit nunc, at volutpat arcu enim ac metus. Vivamus in
+//             ante sapien. Nulla fringilla at tellus tristique lobortis. Mauris
+//             felis diam, pellentesque a eros id, varius auctor diam. Praesent
+//             eget cursus neque, et feugiat tellus. Duis vitae ex nulla. Duis
+//             ultrices non ante vel gravida. Praesent consectetur volutpat odio
+//             non facilisis. Suspendisse sit amet euismod mi. Fusce lacinia
+//             suscipit augue. Suspendisse tincidunt massa nec dolor pulvinar
+//             cursus. Etiam pellentesque, nisl non molestie egestas, diam erat
+//             laoreet elit, sit amet aliquam tellus felis sit amet augue. Ut
+//             condimentum leo sed turpis hendrerit, at vulputate arcu mollis.
+//             Maecenas vel semper enim, in placerat est. Praesent in sagittis ex,
+//             vitae fermentum diam. Duis semper suscipit dui eu vulputate. Etiam
+//             pretium massa vel leo egestas, vel luctus libero congue.
+//             Pellentesque tincidunt enim sapien, et gravida augue rutrum at.
+//             Morbi consequat vitae turpis viverra facilisis. Quisque accumsan
+//             scelerisque est, eu pellentesque orci maximus et. Nam imperdiet
+//           </div>
+//         </div>
+//       </div>
+//     </div> */}
