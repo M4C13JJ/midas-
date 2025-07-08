@@ -4,7 +4,7 @@ import FurnitureMaterialSelect from "@/app/components/FurnitureMaterialSelect";
 import { COLLECTION_ITEMS, CORNERS_COLLECTION } from "@/app/helpers/constants";
 import { useEffect, useState } from "react";
 import { ImageSlider } from "@/app/components/ImageSlider";
-import { notFound, useParams, usePathname } from "next/navigation";
+import { notFoaund, useParams } from "next/navigation";
 import { div } from "framer-motion/m";
 
 const Naroznik = () => {
@@ -63,7 +63,7 @@ const Naroznik = () => {
           >
             <ImageSlider images={localImages} />
           </div>
-          <div className="mt-12">
+          <div className="mt-24">
             OPIS PRODUKTU sit amet, consectetur adipiscing elit. Quisque
             accumsan fringilla ullamcorper. Nullam interdum mi non tempor
             facilisis. Sed semper, sapien hendrerit placerat facilisis, orci

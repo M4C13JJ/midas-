@@ -22,14 +22,6 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <header className="relative h-[500px] w-full">
-          <Image
-            src="/pages/home/naroznik_sztruksowy.jpg"
-            alt="Salon Meblowy Midas"
-            layout="fill"
-            objectFit="cover"
-          />
-        </header>
 
         {/* About Section */}
         <section className="py-12 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-white text-black ">

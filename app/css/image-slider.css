@@ -42,12 +42,12 @@
   }
 }
 .custom-arrow {
-    fill: none;
-    stroke: whitesmoke;
-    width: 64px;
-    height: 64px;
-  }
-  
+  fill: none;
+  stroke: rgba(245, 245, 245, 0.5);
+  width: 64px;
+  height: 64px;
+}
+
 .img-slider-dot-btn {
   all: unset;
   display: block;
@@ -66,15 +66,14 @@
   stroke: ghostwhite;
   fill: ghostwhite;
   height: 100%;
-  
+
   width: 100%;
-  
 }
 .active-dot {
-    scale: 1.4; /* Powiększenie aktywnego kółka */
-    transition: scale 200ms ease-in-out;
-  }
-  
+  scale: 1.4; /* Powiększenie aktywnego kółka */
+  transition: scale 200ms ease-in-out;
+}
+
 .img-slider-dot-btn:focus-visible,
 .img-slider-btn:focus-visible {
   outline: auto;
@@ -110,6 +109,4 @@
   .img-slider-img {
     transition: translate 300ms ease-in-out;
   }
-
-  
 }

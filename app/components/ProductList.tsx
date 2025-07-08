@@ -5,6 +5,7 @@ import FurnitureDisplay from "./FurnitureDisplay";
 
 const ProductList = () => {
   const topOfferNames = ["Polo", "Coco", "Czaki", "Moly"];
+  //"Polo", "Coco", "Czaki", "Moly
   const selected = CORNERS_COLLECTION.filter((item) =>
     topOfferNames.includes(item.name)
   );
